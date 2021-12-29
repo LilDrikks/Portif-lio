@@ -156,8 +156,13 @@ body {
 
 .portifolio {
     .projetos {
-        display: flex;
+        width: 10px;
+        position: absolute;
         flex-direction: column;
+        word-wrap: break-word;
+        margin-left: 50px;
+        font-size: 40px;
+        color:#8d8d8d;
     }
     margin-top: 40px;
     .dvportifolio {
@@ -277,14 +282,6 @@ body {
             height: 100%;
         }
     }
-    .linha {
-        align-items: center;
-        display: block;
-        height: 5px;
-        background-color: $colorP;
-        grid-column: 1 / 13;
-        grid-row-start: 1;
-    }
     .for {
         color: $colorT;
         grid-row: 2 / 4;
@@ -331,9 +328,9 @@ body {
         color: $colorT;
         grid-row-start: 4;
         grid-column-start: 8;
-        span {
+        .spnImg {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         p {
             font-size: $txbady;
@@ -345,9 +342,6 @@ body {
             width: 100%;
             h1 {
                 text-align: center;
-            }
-            span {
-                justify-content: space-evenly;
             }
             p {
                 text-align: center;
